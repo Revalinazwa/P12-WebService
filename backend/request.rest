@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Nazwa Revalina Azzahra",
+    "email": "nazwa@gmail.com",
+    "gender": "Perempuan"
+}
+
+###
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "Revalinazwa",
+    "email": "reva@gmail.com",
+    "gender": "Perempuan"
+}
+
+###
+DELETE  http://localhost:5000/users/2
